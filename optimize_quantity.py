@@ -27,5 +27,5 @@ def fun_optimiz(var_opt, var_range, var_cost, df):
     fig_QuantityVsRevenue.add_annotation(x=int(max_val['Quantity']), y=int(max_val['Revenue']),text="Maximum Revenue",
                                          showarrow=True,arrowhead=1)
     fig_QuantityVsRevenue.update_layout(showlegend=False,xaxis_title="Quantity",yaxis_title="Revenue")
-    fig_QuantityVsRevenue.add_vline(x=int(max_val['Quantity']), line_width=1.5, line_dash="dash",line_color="blue", opacity=0.25)
+    fig_QuantityVsRevenue.add_vline(x=int(max_val['Quantity']), line_width=1.5, line_dash="dash",line_color="purple", opacity=0.25)
     return [profit, fig_QuantityVsRevenue, fig_PriceVsQuantity, round(max_val['Quantity'].values[0],2), round(max_val['Revenue'].values[0],3)]

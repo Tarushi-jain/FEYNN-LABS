@@ -30,7 +30,7 @@ def fun_optimize(var_opt, var_range, var_cost, df):
     fig_PriceVsRevenue.add_annotation(x=int(max_val['Price']), y=int(max_val['Revenue']),text="Maximum Revenue",
                                       showarrow=True,arrowhead=1)
     fig_PriceVsRevenue.update_layout( showlegend=False, xaxis_title="Price",yaxis_title="Revenue")
-    fig_PriceVsRevenue.add_vline(x=int(max_val['Price']), line_width=1.5, line_dash="dash",line_color="blue", opacity=0.25)
+    fig_PriceVsRevenue.add_vline(x=int(max_val['Price']), line_width=1.5, line_dash="dash",line_color="purple", opacity=0.25)
     return [profit, fig_PriceVsRevenue, fig_PriceVsQuantity, round(max_val['Price'].values[0],2),round(max_val['Revenue'].values[0],3)]
 
 
